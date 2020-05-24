@@ -38,11 +38,28 @@
   font-family: 'Oxygen', sans-serif;
 }
 
-Link {
-  text-decoration: none;
-}
-
 .container {
   margin: auto;
   width: 1050px;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-item {
+  border: 1px solid gray;
+  margin-bottom: 15px;
+  padding: 18px 5px;
+  border-radius: 8px;
+}
+
+.post-item:first-child {
+  margin-top: 15px;
+}
+
+.post-item .row {
+  display: flex;
 }
