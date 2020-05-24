@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background-color: black;
+  color: beige;
+  padding-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-container h1 {
+  flex: 4;
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.links-container {
+  margin-top: 18px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.links-container li {
+  flex-basis: 70px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+Link {
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+  width: 1050px;
 }
