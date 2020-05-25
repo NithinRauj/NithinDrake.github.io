@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Oxygen', sans-serif;
 }
 
 .navbar {
@@ -21,7 +22,6 @@
   flex: 4;
   padding-top: 20px;
   text-align: center;
-  font-family: 'Oxygen', sans-serif;
 }
 
 .links-container {
@@ -35,7 +35,6 @@
 
 .links-container li {
   flex-basis: 70px;
-  font-family: 'Oxygen', sans-serif;
 }
 
 .container {
@@ -52,7 +51,7 @@
 .post-item {
   border: 1px solid gray;
   margin-bottom: 15px;
-  padding: 18px 5px;
+  padding: 18px 10px;
   border-radius: 8px;
 }
 
@@ -60,6 +59,43 @@
   margin-top: 15px;
 }
 
+.post-item a {
+  text-decoration: none;
+  color: black;
+}
+
 .post-item .row {
   display: flex;
+}
+
+.row p {
+  color: gray;
+}
+
+h3 {
+  padding-bottom: 10px;
+}
+
+.black-text {
+  color: black;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.page-item {
+  border: 1px solid grey;
+  padding: 5px;
+  flex-basis: 5%;
+  flex-grow: 0;
+  text-align: center;
+}
+
+.page-link {
+  text-decoration: none;
+  color: black;
 }
