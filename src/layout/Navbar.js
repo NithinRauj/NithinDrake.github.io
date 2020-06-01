@@ -12,11 +12,7 @@ const Navbar = () => {
               Home{' '}
             </Link>
           </li>
-          <li>
-            <Link to='/ask' style={linkStyle}>
-              Ask
-            </Link>
-          </li>
+
           <li>
             <Link to='/show' style={linkStyle}>
               Show

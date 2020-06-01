@@ -2,7 +2,7 @@ import React from 'react';
 import PostItem from './PostItem';
 
 const Posts = ({ posts, loading }) => {
-  if (loading || posts.length === 0) {
+  if (posts === null || loading) {
     return <h4 style={{ textAlign: 'center' }}>Loading News...</h4>;
   }
 

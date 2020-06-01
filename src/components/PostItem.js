@@ -9,7 +9,7 @@ const PostItem = ({ post }) => {
   return (
     <div className='post-item'>
       {url !== null && url !== '' ? (
-        <a href={url} target='_blank'>
+        <a href={url} target='_blank' rel='noopener noreferrer'>
           <h3>{title}</h3>
         </a>
       ) : (
@@ -27,9 +27,11 @@ const PostItem = ({ post }) => {
         <p>
           By: <span className='black-text'>{by}</span> &nbsp; | &nbsp;
         </p>
-        <p>
-          <span className='black-text'>{descendants} Comments</span>{' '}
-        </p>
+        {type !== 'job' && (
+          <p>
+            <span className='black-text'>{descendants} Comments</span>{' '}
+          </p>
+        )}
       </div>
     </div>
   );
